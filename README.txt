@@ -2,7 +2,7 @@ Grocery-Product-Detection:
 This repository builds a product detection model to recognize products from grocery shelf images. Everything from data preparation to model training is done using Google Colab Notebooks so that no setup is required locally. All the relevant commentaries have been included inside the Colab Notebooks.
 
 
-Repository organization:
+Repository organization: 
 |── Notebooks
    ├── grocery-dataset-preparation.ipynb: EDA and data preparation notebook. 
    ├── grocery-dataset-evaluation.ipynb: Runs evaluation on the test images with the trained model.
@@ -28,5 +28,18 @@ Notes:
 	-Random crops
 --Detection network used: SSD MobileDet.
 --Training hyperparameters are available inside Requirements/ssdlite_mobiledet_dsp_320x320_products_sync_4x4.config file.
---Precision and recall reported in Deliverables/metrics.json are mean values computed over the precision_@0.5IOU and recall_@0.5IOU columns of Requirements/confusion_matrix.csv.
+--Precision and recall reported in Deliverables/metrics.json are mean values computed over the precision_@0.5IOU and recall_@0.5IOU columns of Requirements/ confusion_matrix.csv.
 --A threshold of 0.6 was used in order to obtain the number of products per test image.
+
+
+Dataset citation:
+
+@article{varol16a,
+      TITLE = {{Toward Retail Product Recognition on Grocery Shelves}},
+      AUTHOR = {Varol, G{"u}l and Kuzu, Ridvan S.},
+      JOURNAL = {ICIVC},
+      YEAR = {2014}
+}
+
+
+
